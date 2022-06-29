@@ -1,13 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter , Route , Routes} from 'react-router-dom'
 
-import Counter from './Components/Counter';
+
+//imports
+import Navbar from './Components/navbar/Navbar';
+import Home from './Components/home/Home';
+import About from './Components/about/About';
+import Counter from './Components/counter/Counter';
+import Shop from './Components/Shop/Shop';
+import Product from './Components/product/Product';
 
 function App() {
-  return (<>
+  return (
+  <BrowserRouter>
+    <Navbar/>
 
-  <Counter/>
-  </>)
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/shop' element={<Shop/>}/>
+    <Route path='/counter' element={<Counter/>}/>
+    <Route path='/products/:id' element={<Product/>}></Route>
+    </Routes>
+
+  {/* <Counter/> */}
+
+  </BrowserRouter>
+  )
     
 }
 

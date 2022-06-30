@@ -11,6 +11,7 @@ const Navbar = () => {
                     <li className="list-item"><Link to='/about'>About</Link></li>
                     <li className="list-item"><Link to='/shop'>Shop</Link></li>
                     <li className="list-item"><Link to='/counter'>Counter</Link></li>
+                    <li className='list-item'><Link to='/todoapp'>Todo-App</Link></li>
                 </ul>
             </div>
         </nav>

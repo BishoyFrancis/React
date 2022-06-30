@@ -20,7 +20,7 @@ const Product = () =>{
     }
 
     return (
-        <div className="container">
+        <div className="container mb-1">
             {
             product.id ?
             <div className="row productDetail">

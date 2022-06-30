@@ -32,9 +32,6 @@
     border-radius: 10px;
 } 
 
-
-
-
 .list > li{
     text-decoration: none;
     /* border: 3px solid rgb(177, 169, 169); */
@@ -57,4 +54,25 @@
     /* color: rgb(14, 0, 48); */
     color: navy;
     overflow-wrap: break-word;
+}
+
+.datePicker{
+    background-color: lawngreen;
+    border-radius: 10px;
+}
+
+.datePicker button{
+    padding: 10px;
+}
+
+.react-datetime-picker__wrapper{
+    border: none !important;
+    padding: 10px;
+}
+
+.dueDate{
+    color: red;
+    font-weight: 700;
+    font-size: 1.1rem;
+
 }

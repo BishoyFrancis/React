@@ -27,7 +27,7 @@ const Product = () =>{
                 <div className="col-4">
                     <img src={product.image} />
                 </div>
-                <div className="col-6 productInfo">
+                <div className="col-5 productInfo">
                     <div className="roundedLine"></div>
                     <h2>{product.title}</h2>
                     <span className="d-block">{product.price}$</span>

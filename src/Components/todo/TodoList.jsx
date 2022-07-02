@@ -39,7 +39,11 @@ const TodoList = ()=>{
                     }
                 </ul>
                 :
-                <div></div>
+                <div className="text-center">
+                    <h2>
+                    No Todos , You Are Free
+                    </h2>
+                </div>
             }
         </div>
 

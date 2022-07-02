@@ -1,0 +1,39 @@
+.registerWrapper{
+    background-color: aliceblue;
+    padding-bottom: 80px;
+}
+
+.registerHeader{
+    text-align: center;
+    padding-top: 40px;
+}
+.registerHeader h1{
+    color: #3b4483;
+}
+
+
+.line{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 200px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #3b4483 ;
+}
+
+.registerForm input{
+    color: #3b4483;
+}
+
+.registerForm p{
+    color: red;
+}
+
+.registerForm input:focus{
+    border-color: #3b4483;
+}
+
+.submitButton{
+    background-color: #3b4483 !important;
+    font-size: 1.5rem;
+}   

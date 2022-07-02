@@ -9,6 +9,9 @@ import About from './Components/about/About';
 import Counter from './Components/counter/Counter';
 import Shop from './Components/Shop/Shop';
 import Product from './Components/product/Product';
+import Todo from './Components/todo/Todo';
+import Register from './Components/register/Register';
+
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
     <Route path='/shop' element={<Shop/>}/>
     <Route path='/counter' element={<Counter/>}/>
     <Route path='/products/:id' element={<Product/>}></Route>
+    <Route path='/todoapp' element={<Todo/>}></Route>
+    <Route path='/register' element={<Register/>}></Route>
+
     </Routes>
 
   {/* <Counter/> */}

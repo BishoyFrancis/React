@@ -1,13 +1,15 @@
-import {createStore} from 'redux';
 import {configureStore} from '@reduxjs/toolkit'
-import { todoReducer } from './config';
-import { todoSlice } from './features/TodoSlice';
+import { todoSliceReducer } from './features/TodoSlice';
+import { counterSliceReducer } from './features/CounterSlice';
 
 
 
-console.log("TODO SLICE:" ,todoSlice)
+
 export const store = configureStore(
     
     {
-        reducer:todoSlice.reducer
+        reducer:{
+            todo:todoSliceReducer,
+            counter:counterSliceReducer
+        }
     });

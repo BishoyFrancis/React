@@ -11,9 +11,12 @@ const TodoList = ()=>{
   "July", "August", "September", "October", "November", "December"
 ]);
     const dispatch = useDispatch();
-    const todos = useSelector((state) => state.todos);
-    console.log("todos",todos);
-    console.log("STATE" , useSelector((state) => state));
+    const todos = useSelector((state) => state.todo.todos);
+    // console.log("todos",todos);
+    console.log("STATE" , useSelector((state) => state.todo));
+
+
+    console.log("todos" , todos);
 
     const removeTodo = (idx) =>{
         dispatch(deleteTodoSliceAction(idx));

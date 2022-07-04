@@ -1,8 +1,9 @@
 import './todo.css'
 import {useDispatch} from "react-redux";
 import { useState } from "react";
-import { addTodoAction } from '../redux';
+import { addTodoAction } from '../redux/config';
 import DateTimePicker from 'react-datetime-picker';
+import { addTodoSliceAction } from '../redux/features/TodoSlice';
 
 const TodoForm = ()=> {
     
@@ -28,7 +29,7 @@ const TodoForm = ()=> {
   };
 
   const addTodo = (title,description,dateValue)=>{
-    dispatch(addTodoAction({title,description,dateValue}));
+    dispatch(addTodoSliceAction({title,description,dateValue}));
 
   }
     return (<div className="header mb-5">

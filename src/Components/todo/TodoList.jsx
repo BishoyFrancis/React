@@ -1,7 +1,8 @@
 import {useDispatch , useSelector} from "react-redux"
-import { deleteTodoAction } from "../redux";
+import { deleteTodoAction } from "../redux/config";
 import { useState } from "react";
 import './todo.css'
+import { deleteTodoSliceAction } from "../redux/features/TodoSlice";
 
 
 
@@ -12,9 +13,10 @@ const TodoList = ()=>{
     const dispatch = useDispatch();
     const todos = useSelector((state) => state.todos);
     console.log("todos",todos);
+    console.log("STATE" , useSelector((state) => state));
 
     const removeTodo = (idx) =>{
-        dispatch(deleteTodoAction(idx));
+        dispatch(deleteTodoSliceAction(idx));
     }
 
     return(

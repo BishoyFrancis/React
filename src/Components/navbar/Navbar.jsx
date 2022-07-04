@@ -3,9 +3,9 @@ import '../components.css'
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-light bg-secondary justify-content-center align-items-center p-2 ">
+        <nav className="navbar navbar-light bg-primary justify-content-center align-items-center p-2 ">
             <div className="container">
-                <h2 style={{color:'#fff'}}>Products</h2>
+                <h2 style={{color:'#fff'}}>Portfolio</h2>
                 <ul className="d-flex gap-5 unlist align-items-center mt-3">
                     <li className="list-item"><Link to='/'>Home</Link></li>
                     <li className="list-item"><Link to='/about'>About</Link></li>

@@ -1,5 +1,6 @@
 import './App.css';
-import {BrowserRouter , Route , Routes} from 'react-router-dom'
+import {BrowserRouter , Route , Routes , Switch} from 'react-router-dom';
+
 
 
 //imports
@@ -13,23 +14,23 @@ import Todo from './Components/todo/Todo';
 import Register from './Components/register/Register';
 
 
+
 function App() {
+
   return (
-  <BrowserRouter>
-    <Navbar/>
+    <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='/about' element={<About/>}/>
+        <Route path='/shop' element={<Shop/>}/>
+        <Route path='/counter' element={<Counter/>}/>
+        <Route path='/products/:id' element={<Product/>}></Route>
+        <Route path='/todoapp' element={<Todo/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+      </Routes>
+      
 
-    <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/shop' element={<Shop/>}/>
-    <Route path='/counter' element={<Counter/>}/>
-    <Route path='/products/:id' element={<Product/>}></Route>
-    <Route path='/todoapp' element={<Todo/>}></Route>
-    <Route path='/register' element={<Register/>}></Route>
-
-    </Routes>
-
-  {/* <Counter/> */}
 
   </BrowserRouter>
   )

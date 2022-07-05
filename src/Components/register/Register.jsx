@@ -35,7 +35,7 @@ const Register = () =>{
         },
         {
             value : 3,
-            label: "React"
+            label: "React.js"
         },
         {
             value : 3,
@@ -60,7 +60,28 @@ const Register = () =>{
         {
             value : 8,
             label: "C++"
-        }
+        },
+        {
+            value : 9,
+            label: "Database"
+        },
+        {
+            value : 10,
+            label: "Algorithms"
+        },
+        {
+            value : 11,
+            label: "Data Structures"
+        },
+        {
+            value : 11,
+            label: "HTML & CSS"
+        },
+        {
+            value : 12,
+            label: "Webpack"
+        },
+
     ]
 
     console.log('errors : ' , errors);
@@ -98,11 +119,11 @@ const Register = () =>{
                     </div>
                     <div className='row pb-4'>
                         <div className="col">
-                            <ReactSelect options={genderOptions} {...register('gender' , {required:true})}/>
+                            <ReactSelect options={genderOptions} {...register('gender' , {required:true})} placeholder='Choose Gender'/>
                             {(errors.gender && errors.gender.type === 'required')?<p>This Field is Required</p>:null}
                         </div>
                         <div className="col">
-                            <ReactSelect options={skillsOptions} isMulti {...register('skills' , {required:true})}/>
+                            <ReactSelect options={skillsOptions} isMulti {...register('skills' , {required:true})} placeholder='Choose Skills'/>
                             {(errors.skills && errors.skills.type === 'required')?<p>This Field is Required</p>:null}
                         </div>
                         <div className="col">
